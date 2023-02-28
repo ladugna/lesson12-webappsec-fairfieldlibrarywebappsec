@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fairfield Library - System Administration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.3/cerulean/bootstrap.min.css" integrity="sha512-1rXsIsq9uaj3bxRth2+Mw1slRDxuPzGlfJ8PaLmkO3/OtvCL7jVQrdxaC1VvCmCzKRMdKu0pmbCtqQz/3/xORA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div id="page-content">
+      <header th:replace="~{fragments/header :: header}"></header>
+        <main>
+            <h2>System Administration</h2>
+            <hr>
+            <div class="row">
+                <h3>Manage the eCatalog</h3>
+                <div class="col-md-3">
+                    <div class="card border-primary mb-3" style="max-width: 20rem;">
+                        <a class="sysadmin-card-link" th:href="@{/secured/publisher/list}">
+                            <div class="card-header">Manage Publishers</div>
+                            <div class="card-body">
+                                <h4 class="card-title">Publishers</h4>
+                                <p class="card-text">
+                                    Register a new Publisher including their Primary Address and Contact information.
+                                    Also, update or delete an existing Publisher.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-primary mb-3" style="max-width: 20rem;">
+                        <a class="sysadmin-card-link" href="#">
+                            <div class="card-header">Manage Books</div>
+                            <div class="card-body">
+                              <h4 class="card-title">Books</h4>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>    
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-primary mb-3" style="max-width: 20rem;">
+                        <a class="sysadmin-card-link" href="#">
+                            <div class="card-header">Manage Authors</div>
+                            <div class="card-body">
+                              <h4 class="card-title">Authors</h4>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-primary mb-3" style="max-width: 20rem;">
+                        <a class="sysadmin-card-link" href="#">
+                            <div class="card-header">Manage Subjects and Categories</div>
+                            <div class="card-body">
+                              <h4 class="card-title">Subjects and Categories</h4>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h3>Manage Membership and User Accounts</h3>
+                <div class="col-md-3">
+                    <div class="card border-primary mb-3" style="max-width: 20rem;">
+                        <a class="sysadmin-card-link" href="#">
+                            <div class="card-header">Manage LibraryMembers</div>
+                            <div class="card-body">
+                              <h4 class="card-title">Members</h4>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-primary mb-3" style="max-width: 20rem;">
+                        <a class="sysadmin-card-link" href="#">
+                            <div class="card-header">Manage Membership Types</div>
+                            <div class="card-body">
+                              <h4 class="card-title">Membership Types</h4>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-primary mb-3" style="max-width: 20rem;">
+                        <a class="sysadmin-card-link" href="#">
+                            <div class="card-header">Manage Users Accounts</div>
+                            <div class="card-body">
+                              <h4 class="card-title">Users</h4>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-primary mb-3" style="max-width: 20rem;">
+                        <a class="sysadmin-card-link" href="#">
+                            <div class="card-header">Manage User-Roles</div>
+                            <div class="card-body">
+                              <h4 class="card-title">Roles</h4>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                      <div class="collapse navbar-collapse" id="navbarColor03">
+                        <ul class="navbar-nav me-auto">
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#">Publishers</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Books</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Library Members</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">User Accounts</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div> -->
+            <!-- <div>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Publishers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Books</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Members</a>
+                    </li>
+                  </ul>
+            </div> -->
+        </main>
+      <footer th:replace="~{fragments/footer :: footer}"></footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
